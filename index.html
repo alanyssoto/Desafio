@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadatos básicos del documento -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Encabezado con logo -->
+    <header>
+        <img src="img/Logo.png" alt="Alura Logo" class="logo">
+    </header>
+
+    <!-- Sección principal del contenido -->
+    <main>
+        <section class="input-section">
+            <textarea class="text-area" placeholder="Ingrese el texto aquí"></textarea>
+            <div class="info">
+                <p>Solo letras minúsculas y sin acentos</p>
+            </div>
+            <div class="btns">
+                <button class="btnEncriptar" onclick="btnEncriptar()">Encriptar</button>
+                <button class="btnDesencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+            </div>
+        </section>
+
+        <!-- Sección para mostrar los resultados -->
+        <section class="output-section">
+            <img src="img/Muñeco.png" alt="foto">
+            <div class="encriptadas-section">
+                <h2 class="titulo">Encriptadas</h2>
+                <ul class="lista-encriptadas"></ul>
+            </div>
+
+            <!-- Sección para mostrar textos desencriptados -->
+            <div class="desencriptadas-section">
+                <h2 class="titulo">Desencriptadas</h2>
+                <ul class="lista-desencriptadas"></ul>
+            </div>
+
+            <!-- Botón para vaciar las listas de resultados -->
+            <button class="btnVaciar" onclick="vaciarListas()">Vaciar Listas</button>
+        </section>
+    </main>
+
+    <!-- Pie de página con créditos -->
+    <footer>
+        <p>Página creada por Alanys Soto<3</p>
+    </footer>
+
+    <!-- Enlace al archivo JavaScript -->
+    <script src="js.js"></script>
+</body>
+</html>

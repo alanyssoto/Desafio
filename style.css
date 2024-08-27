@@ -1,0 +1,184 @@
+body {
+   background-color: rgba(166, 190, 97, 0.3);
+   font-family: 'Inter', sans-serif;
+   margin: 0;
+   padding: 0;
+}
+
+footer {
+   background-color: rgba(0, 0, 0, 0.1);
+   color: rgb(0, 0, 0);
+   text-align: center;
+   padding: 10px 0;
+   position: fixed;
+   width: 100%;
+   bottom: 0;
+   left: 0;
+}
+
+footer p {
+   margin: 0;
+   font-size: 14px;
+}
+
+footer a {
+   color: #ffffff;
+   text-decoration: none;
+}
+
+footer a:hover {
+   text-decoration: underline;
+}
+
+.logo {
+   margin: 20px;
+   width: 50px;
+}
+
+main {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 80vh;
+   gap: 50px;
+}
+
+.input-section {
+   background-color: rgba(0, 0, 0, 0.1);
+   padding: 40px;
+   border-radius: 12px;
+   box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+   width: 40%;
+}
+
+.text-area {
+   width: 92%;
+   height: 150px;
+   border: none;
+   border-radius: 8px;
+   padding: 20px;
+   font-size: 18px;
+   color: #0A3871;
+   resize: none;
+}
+
+.text-area::placeholder {
+   color: #0A3871;
+}
+
+.text-area:focus {
+   outline: none;
+}
+
+.info {
+   margin-top: 10px;
+   color: #495057;
+   font-size: 14px;
+}
+
+.btns {
+   display: flex;
+   justify-content: space-between;
+   margin-top: 20px;
+}
+
+.btnEncriptar, .btnDesencriptar, .btnVaciar {
+   width: 48%;
+   height: 50px;
+   border-radius: 8px;
+   border: none;
+   cursor: pointer;
+   font-size: 18px;
+}
+
+.btnEncriptar {
+   background-color: #3275c7;
+   color: white;
+}
+
+.btnDesencriptar {
+   background-color: #DBDFE8;
+   color: #0A3871;
+}
+
+.btnVaciar {
+   background-color: #DBDFE8;
+   color: #0A3871;
+}
+
+.output-section {
+   background-color: rgba(0, 0, 0, 0.1);
+   padding: 40px;
+   border-radius: 12px;
+   box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+   width: 25%;
+   text-align: center;
+}
+
+.titulo {
+   color: #0A3871;
+}
+
+.copiar-btn {
+   background: none;
+   border: none;
+   cursor: pointer;
+   margin-left: 10px;
+   vertical-align: middle;
+}
+
+.copiar-btn img {
+   width: 20px;
+   height: 20px;
+   filter: invert(60%) sepia(8%) saturate(457%) hue-rotate(168deg) brightness(87%) contrast(85%);
+}
+
+.copiar-btn:hover img {
+   filter: invert(36%) sepia(95%) saturate(3438%) hue-rotate(190deg) brightness(95%) contrast(96%);
+}
+
+@media (max-width: 768px) {
+   main {
+       flex-direction: column;
+       height: auto;
+       gap: 30px;
+       padding: 20px;
+   }
+   
+   .input-section, .output-section {
+       width: 80%;
+   }
+
+   .btnEncriptar, .btnDesencriptar, .btnVaciar {
+       width: 100%;
+       margin-top: 10px;
+   }
+}
+
+@media (max-width: 480px) {
+   .logo {
+       width: 40px;
+       margin: 10px;
+   }
+
+   .input-section, .output-section {
+       width: 90%;
+       padding: 20px;
+   }
+
+   .btnEncriptar, .btnDesencriptar, .btnVaciar {
+       width: 100%;
+       margin-top: 10px;
+       height: 45px;
+       font-size: 16px;
+   }
+
+   .text-area {
+       height: 120px;
+       font-size: 16px;
+   }
+
+   footer p {
+       font-size: 12px;
+   }
+}
